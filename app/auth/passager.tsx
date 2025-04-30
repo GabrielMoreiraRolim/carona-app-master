@@ -81,59 +81,6 @@ const Passager = () => {
             padding: 8
           }} />
         </View>
-        <View
-          style={{
-            paddingHorizontal: 25,
-            paddingVertical: 18
-          }}>
-          <Text
-            style={{
-              fontSize: 22,
-              fontWeight: 'bold',
-              marginBottom: 16
-            }}
-          >Informações do Veículo</Text>
-          <Text style={{ fontSize: 18 }}>Marca</Text>
-          <TextInput style={{
-            backgroundColor: '#FDFDFD',
-            borderWidth: 1,
-            borderColor: '#C0C0C0',
-            borderRadius: 8,
-            height: 42,
-            marginBottom: 16,
-            padding: 8
-          }} />
-          <Text style={{ fontSize: 18 }}>Modelo</Text>
-          <TextInput style={{
-            backgroundColor: '#FDFDFD',
-            borderWidth: 1,
-            borderColor: '#C0C0C0',
-            borderRadius: 8,
-            height: 42,
-            marginBottom: 16,
-            padding: 8
-          }} />
-          <Text style={{ fontSize: 18 }}>Ano</Text>
-          <TextInput style={{
-            backgroundColor: '#FDFDFD',
-            borderWidth: 1,
-            borderColor: '#C0C0C0',
-            borderRadius: 8,
-            height: 42,
-            marginBottom: 16,
-            padding: 8
-          }} />
-          <Text style={{ fontSize: 18 }}>Placa</Text>
-          <TextInput style={{
-            backgroundColor: '#FDFDFD',
-            borderWidth: 1,
-            borderColor: '#C0C0C0',
-            borderRadius: 8,
-            height: 42,
-            marginBottom: 16,
-            padding: 8
-          }} />
-        </View>
       </ScrollView>
       <View style={{
         backgroundColor: '#000',
