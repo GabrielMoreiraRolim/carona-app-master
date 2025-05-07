@@ -1,7 +1,13 @@
-import { View, Text, TextInput, ScrollView } from 'react-native'
+import { View, Text, TextInput, ScrollView, TouchableOpacity, Pressable } from 'react-native'
 import React from 'react'
 import { MaterialIcons } from '@expo/vector-icons'
+
+import { useRouter } from 'expo-router'
+
 const Passager = () => {
+
+  const router = useRouter()
+
   return (
     <>
       <View style={{
@@ -9,9 +15,12 @@ const Passager = () => {
         justifyContent: 'flex-start',
         alignItems: 'center',
         backgroundColor: '#000',
-        height: 86
+        height: 86,
+        paddingLeft: 16,
       }}>
-        <MaterialIcons name='arrow-back' color='#fff' size={24} />
+        <Pressable onPress={() => router.back()}>
+          <MaterialIcons name='arrow-back' color='#fff' size={24} />
+        </Pressable>
         <Text
           style={{
             marginLeft: 16,
@@ -88,13 +97,15 @@ const Passager = () => {
         justifyContent: 'center',
         alignItems: 'center'
       }}>
-        <Text
-          style={{
-            color: '#FFF',
-            fontSize: 22,
-          }}>
-          Cadastrar
-        </Text>
+        <Pressable onPress={() => router.push('/(tabs)/home')}>
+          <Text
+            style={{
+              color: '#FFF',
+              fontSize: 22,
+            }}>
+            Cadastrar
+          </Text>
+        </Pressable>
       </View>
     </>
 
